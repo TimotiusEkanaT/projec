@@ -64,6 +64,26 @@ nav ul li a:hover {
   background-color: rgb(114, 110, 110);
 }
 
+.glass {
+  position: inherit;
+  color: white;
+  float: left;
+  left: 475px;
+  top: 23px;
+}
+
+.search {
+  position: inherit;
+  float: left;
+  left: 500px;
+  top: 20px;
+  input{
+    width: 400px;
+    border-radius: 5px;
+  }
+}
+
+
 .search-box {
   flex: 1; /* Menggunakan sisa ruang kosong di header */
   display: flex;

@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pesan_tiket.css" />
     <script src="https://kit.fontawesome.com/727c1ff976.js" crossorigin="anonymous"></script>
-
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  
   <header>
     <!-- logo -->
-      <img class="logo" src="Coffee Break.png" alt="logo" />
+    <a href="home.html">
+      <img class="logo" src="asset/logo.png" alt="logo" />
+    </a>
+
     <!-- navigasi -->
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Line up</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-    <div class="search-box">
-    <input type="text" placeholder="Search..." />
-    <input type="button" value="Search" />
-  </div>
+    <p class="nav">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a style="color: white !important" href="home.html">Home</a>
+      <a href="#event">Event</a>
+      <a href="#detail">detail</a>
+    </p>
+
     <!-- search bar -->
     <!-- <p class="search">
       <input type="text" placeholder="search..." />
     </p> -->
   </header>
+
+
 <div class="container"></div>
-<img src="Seating-Plan-1024x1024.jpg" alt="Nama Gambar" class="gambar-samping">
+<img src="asset/Seating-Plan-1024x1024.jpg" alt="Nama Gambar" class="gambar-samping">
   
       <!-- Detail konser akan ditampilkan di sini -->
    
     <div class="form-container">
-       <img src="Coffee Break.png" alt="Foto" class="form-image">
+       <img src="asset/logo.png" alt="Foto" class="form-image">
       <h2>Form Pemesanan Tiket</h2>
+
       <form action="" method="POST">
         <div class="form-group">
           <label for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required>
+          <br>
+          <input type="text" id="nama" name="nama" required placeholder="Masukkan nama...">
         </div>
+
         <div class="form-group">
           <label for="no_hp">Nomor HP:</label>
-          <input type="text" id="no_hp" name="no_hp" required>
+          <br>
+          <input type="number" id="no_hp" name="no_hp" required placeholder="Masukkan nomor telepon...">
         </div>
+
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <br>
+          <input type="email" id="email" name="email" required placeholder="Masukkan email...">
         </div>
+
         <div class="form-group">
           <label for="jumlah_tiket">Jumlah Tiket:</label>
+          <br>
           <input type="number" id="jumlah_tiket" name="jumlah_tiket" min="1" required>
         </div>
+
         <div class="form-group">
-          <label for="set">Set:</label>
-          <select id="set" name="set">
-            <option value="vvip">platinum</option>
-            <option value="golden">Gold</option>
-            <option value="Silver">Silver</option>
-            
-          </select>
+          <label for="seat">Seat:</label>
+          <br>
+          <div class="form-group-option">
+            <select class="seat" id="set" name="set">
+              <option>Platinum</option>
+              <option >Gold</option>
+              <option>Silver</option>
+              <option>Bronze</option>
+              <option>Orange</option>
+              <option>Purple</option>
+              <option>Pink</option>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Yellow</option>
+              <option>Green</option>
+            </select>
+          </div>
         </div>
+
         <div class="form-group">
           <button type="submit">Pesan Tiket <i class="bi bi-send-plus"></i></button>
         </div>
@@ -74,9 +95,5 @@
       
     </div>
   </div>
-  
-  
-
-  
 </body>
 </html>

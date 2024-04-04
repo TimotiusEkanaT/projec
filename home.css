@@ -89,6 +89,7 @@ body {
 }
 .card {
   width: 300px;
+  height: 500px;
   background-color: #575656;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.3);
@@ -143,4 +144,8 @@ footer {
   height: 35px;
   padding-top: 1%;
   color: whitesmoke;
+}
+
+.card-content-button{ 
+  text-align: center;
 }

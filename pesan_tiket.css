@@ -6,23 +6,47 @@
   background-color: #f3eeee;
 } */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 header {
   background-color: black;
-  height: 70px;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding: 0 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  opacity: 100%;
 }
+
 header img {
   width: 10%;
-  line-height: 70px;
+}
+
+.judul{
+color: #fff;
+}
+
+.nav {
+  float: right;
+  background-color: black;
+  padding-right: 1%;
+  width: 28%;
+  margin-top: 2.5%;
+  margin-left: 5%;
+}
+
+.nav a {
+  margin-right: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav a:nth-child(1) {
+  margin-right: 20px;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 nav ul li {
@@ -114,10 +138,14 @@ form {
 }
 
 .form-group input {
-  width: 100%;
+  width: 500px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.form-group-option{
+  width: 522px;
 }
 
 .form-group input:focus {
